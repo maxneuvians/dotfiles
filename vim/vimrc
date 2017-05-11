@@ -39,11 +39,14 @@ set number
 
 " Set theme
 colo basic-dark 
+
 " Normal mappings
 nmap 0 ^
 nmap <C-s> :w<cr>
 nmap k gk
 nmap j gj
+nmap <C-O> O<ESC>
+nmap <CR> o<ESC>
 
 " Insert mappings
 imap jk <esc>
