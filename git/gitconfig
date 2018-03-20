@@ -1,0 +1,21 @@
+[color]
+  ui = true
+[alias]
+  browse = !hub browse
+  issues = !hub browse -- issues
+  sla = log --oneline --decorate --graph --all -20
+  uncommit = reset --soft ^HEAD
+  unstage = reset
+  upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
+[user]
+  name = Max Neuvians
+  email = max@neuvians.net
+[push]
+  default = upstream 
+[fetch]
+  prune = true
+[credential]
+  helper = !aws codecommit credential-helper $@
+  UseHttpPath = true
+[github]
+  user = maxneuvians
