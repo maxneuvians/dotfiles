@@ -7,6 +7,8 @@
   uncommit = reset --soft ^HEAD
   unstage = reset
   upstream = rev-parse --abbrev-ref --symbolic-full-name @{u}
+	next = !git checkout `git rev-list HEAD..demo-end | tail -1`
+	prev = checkout HEAD^
 [user]
   name = Max Neuvians
   email = max@neuvians.net
